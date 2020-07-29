@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>com.wall675.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>userFilter</filter-name>
+    <filter-class>com.wall675.filter.UserFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>userFilter</filter-name>
+    <url-pattern>/servlet/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginCheckServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.LoginCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CategoryDelete</servlet-name>
+    <servlet-class>com.wall675.servlet.CategoryDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CategoryUpdate</servlet-name>
+    <servlet-class>com.wall675.servlet.CategoryUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockInDetail</servlet-name>
+    <servlet-class>com.wall675.servlet.StockInDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockInServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.StockInServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockInSave</servlet-name>
+    <servlet-class>com.wall675.servlet.StockInSave</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockOutServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.StockOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockOutDetail</servlet-name>
+    <servlet-class>com.wall675.servlet.StockOutDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockOutSave</servlet-name>
+    <servlet-class>com.wall675.servlet.StockOutSave</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockMessage</servlet-name>
+    <servlet-class>com.wall675.servlet.StockMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.StockServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductAdd</servlet-name>
+    <servlet-class>com.wall675.servlet.ProductAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductDelete</servlet-name>
+    <servlet-class>com.wall675.servlet.ProductDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductUpdate</servlet-name>
+    <servlet-class>com.wall675.servlet.ProductUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockInSearchServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.StockInSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockInReport</servlet-name>
+    <servlet-class>com.wall675.servlet.StockInReport</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockOutSearchServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.StockOutSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockOutReport</servlet-name>
+    <servlet-class>com.wall675.servlet.StockOutReport</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockReportServlet</servlet-name>
+    <servlet-class>com.wall675.servlet.StockReportServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StockReport</servlet-name>
+    <servlet-class>com.wall675.servlet.StockReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/servlet/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginCheckServlet</servlet-name>
+    <url-pattern>/LoginCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryDelete</servlet-name>
+    <url-pattern>/servlet/CategoryDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryUpdate</servlet-name>
+    <url-pattern>/servlet/CategoryUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockInDetail</servlet-name>
+    <url-pattern>/servlet/StockInDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockInServlet</servlet-name>
+    <url-pattern>/servlet/StockInServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockInSave</servlet-name>
+    <url-pattern>/servlet/StockInSave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockOutServlet</servlet-name>
+    <url-pattern>/servlet/StockOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockOutDetail</servlet-name>
+    <url-pattern>/servlet/StockOutDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockOutSave</servlet-name>
+    <url-pattern>/servlet/StockOutSave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockMessage</servlet-name>
+    <url-pattern>/servlet/StockMessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockServlet</servlet-name>
+    <url-pattern>/servlet/StockServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/servlet/ProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductAdd</servlet-name>
+    <url-pattern>/servlet/ProductAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductDelete</servlet-name>
+    <url-pattern>/servlet/ProductDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductUpdate</servlet-name>
+    <url-pattern>/servlet/ProductUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockInSearchServlet</servlet-name>
+    <url-pattern>/servlet/StockInSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockInReport</servlet-name>
+    <url-pattern>/servlet/StockInReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockOutSearchServlet</servlet-name>
+    <url-pattern>/servlet/StockOutSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockOutReport</servlet-name>
+    <url-pattern>/servlet/StockOutReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockReportServlet</servlet-name>
+    <url-pattern>/servlet/StockReportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockReport</servlet-name>
+    <url-pattern>/servlet/StockReport</url-pattern>
+  </servlet-mapping>
+  <display-name></display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
